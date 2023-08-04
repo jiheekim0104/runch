@@ -1,8 +1,8 @@
 <template>
-  <div id="app">
+  <!-- <div id="app"> -->
     <app-side/>
     <app-roulette/>
-  </div>
+  <!-- </div> -->
   
 </template>
 
@@ -26,7 +26,22 @@ html,body{
   width: 100%;
 }
 #app{
-  display: -webkit-box;
+  display: flex;
+}
+
+/* .wheel .content span{
+    font-size: 30px;
+  } */
+
+.wheel .content span{
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  text-wrap: balance;
+}
+
+.wheel-item{
+  border: none;
 }
 </style>
 
